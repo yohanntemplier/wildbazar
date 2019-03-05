@@ -1,0 +1,49 @@
+.lead{
+    text-align: center;
+    color: rgb(56, 0, 39);
+    font-size: 50;
+    font-family: 'Comfortaa', cursive;
+
+}
+.display-8{
+    text-align: center;
+    font-size: 80px;
+    color:  rgb(56, 0, 39);
+    font-family: 'Comfortaa', cursive; 
+}
+.s1{
+    color: #fe6440;
+}
+.navbar navbar-light bg-light{
+   
+    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    top: 0;
+    position: relative;
+    transition: top 0.5s;
+}
+    
+.navbar.expand {
+        top: 100px;
+}
+
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 25px;
+  
+    
+}
+.nav-link2{
+    font-family: 'Roboto', sans-serif;
+    color: rgba(255, 255, 255, 0.377);
+    font-size: 25px;
+    margin-left: justify;
+}
+.photo{
+    width: 50px;
+}
+.navbar-brand p{
+    display: inline-block;
+}
+
