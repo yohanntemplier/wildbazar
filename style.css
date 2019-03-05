@@ -85,3 +85,25 @@ h2 {
 .card h5:hover{
     color: #FF6541;
 }
+
+.wild {
+	font-size: 50px;
+}
+
+img {
+	max-width: 100%;
+	height: auto;
+}
+
+.footer {
+	background-image:linear-gradient(to right, #FE6440, #FDBC24);
+}
+
+h3 {
+	font-family: 'Comfortaa', cursive;
+}
+
+.row {
+	 font-family: 'Roboto', sans-serif;
+	 font-size : 20px;
+}
