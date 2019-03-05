@@ -127,7 +127,40 @@ h3 {
 }
 
 .card-img-top{
+
+
     margin-top: 25px;
 }
 
 /* FIN TOP SELLING SECTION*/
+
+
+
+/**About Us**/
+
+
+.container-fluid {
+	padding-top: 30px;
+
+}
+
+.aboutus {
+	padding: 15px 0px 10px 40px;
+	width: 100%;
+	height: auto;
+
+}
+
+.card-titleA {
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	text-shadow: 2px 2px;
+	margin-bottom: 20px;
+}
+
+card-textA { 
+	font-family: 'Roboto', sans-serif;
+	
+}
+
