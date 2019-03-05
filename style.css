@@ -105,5 +105,29 @@ h3 {
 
 .row {
 	 font-family: 'Roboto', sans-serif;
-	 font-size : 20px;
+	 font-size : 20px
+ }
+
+ /*TOP SELLING SECTION*/
+
+.titre_top_selling{
+    font-size: 3em;
+    padding: 10px;
 }
+
+.top_selling_txt{
+    padding: 15px;
+    font-family: Roboto;
+}
+
+.settings_card{
+    max-width: 350px;
+    margin-top: 25px;
+    margin-bottom: 25px;
+}
+
+.card-img-top{
+    margin-top: 25px;
+}
+
+/* FIN TOP SELLING SECTION*/
