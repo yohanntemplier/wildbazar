@@ -1,0 +1,24 @@
+.wild {
+    font-size: 50px;
+}
+
+
+img {
+    max-width: 100%;
+    height: auto;
+}
+
+.footer {
+    background-image:linear-gradient(to right, #FE6440, #FDBC24);
+    padding-top: 20px;
+    padding-left: 20px
+}
+
+h3 {
+    font-family: 'Comfortaa', cursive;
+}
+
+.row {
+     font-family: 'Roboto', sans-serif;
+     font-size : 20px;
+}
