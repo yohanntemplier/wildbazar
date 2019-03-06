@@ -19,7 +19,7 @@
 
 .navbar navbar-light bg-light{
    
-    background-image: linear-gradient(to right, rgba(255,0,0,0), rgba(255,0,0,1));
+    
     top: 0;
     position: relative;
     transition: top 0.5s;
