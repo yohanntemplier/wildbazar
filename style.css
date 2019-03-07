@@ -1,3 +1,6 @@
+/**Navbar**/
+
+
 .lead{
     text-align: center;
     color: rgb(56, 0, 39);
@@ -50,6 +53,9 @@
     display: inline-block;
 }
 
+
+
+/** card **/
 h2 {
     font-family: 'Comfortaa', cursive;
     font-size: 5em;
@@ -174,4 +180,72 @@ card-textA {
 	font-family: 'Roboto', sans-serif;
 	
 }
+
+
+
+
+/**footer**/
+
+.footer {
+	background-color: #2A5762;
+	padding-top: 10px;
+	padding-left: 20px;
+	line-height: 40px;
+}
+.tableFooter {
+	
+}
+.wild {
+	font-size: 30px;
+	color: #FFFFFF;
+	font-family: 'Comfortaa', cursive!important;
+}
+.adress {
+	color: #FFFFFF;
+}
+
+.row {
+	 font-family: 'Roboto', sans-serif;
+	 font-size : 20px
+ }
+.lienfoot {
+	color:#FFFFFF;
+
+}
+
+.lienfoot:hover {
+	text-decoration: none;
+	color: #FF7A00;
+}
+ 
+form  {
+	color: #FFFFFF;
+}
+
+.text-center {
+	color: #FFFFFF;
+}
+
+
+/**button **/
+
+.btn {
+	border: solid 1px #FF7A00;
+	background-color: #FFFFFF;
+	color: #FF7A00;
+
+}
+
+.btn:hover {
+	background-color:  #FF7A00;
+	color: #FFFFFF; 
+}
+
+/**texte**/
+
+.titre {
+	color: #FF7A00;
+}
+
+
 
