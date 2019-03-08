@@ -223,7 +223,6 @@ span{
 	font-family: Roboto;
 	opacity: 0.9;
 }
-
 /* Footer */
 
 .footer {
@@ -264,7 +263,7 @@ form  {
 	color: #FFFFFF;
 }
 
-.footer .text-center {
+.text-center {
 	color: #FFFFFF;
 }
 
