@@ -1,5 +1,5 @@
 body {
-    background-image: url(Images/full-bloom.png);
+    background-image: url("images/full-bloom.png");
 }
 
 .lead{
@@ -47,14 +47,14 @@ body {
     font-size: 0.8em;
 }
 
-.card .products{
+.card.products{
     margin-top: 1em;
     margin-bottom: 1em;
     overflow: hidden;
     transition: transform 0.2s;
 }
 
-.card .products:hover {
+.card.products:hover {
     transform: scale(1.1);
 }
 
