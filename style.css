@@ -111,13 +111,8 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-/*TOP SELLING SECTION*/
 
-<<<<<<< HEAD
-.text-center
-=======
 /*TOP SELLING SECTION*/
->>>>>>> animalerie
 
 .titre_top_selling{
 	font-size: 3em;
@@ -125,7 +120,7 @@ body {
 	font-family: Comfortaa;
 }
 
-<<<<<<< HEAD
+
 span{
 	color: #FF7A00;
 }
@@ -135,12 +130,10 @@ span{
 	font-family: Roboto;
 	font-size: 1.5em;
 	color: black;
-=======
+
 .top_selling_txt{
 	padding: 15px;
 	font-family: Roboto;
->>>>>>> animalerie
-}
 
 .settings_card{
 	max-width: 350px;
@@ -149,7 +142,7 @@ span{
 }
 
 .btn_ts{
-<<<<<<< HEAD
+
 	color: #FF7A00;
 	border: solid 1px #FF7A00;
 	font-family: Roboto;
@@ -165,7 +158,7 @@ span{
 	margin-top: 13px;
 	object-fit: cover;
 	height: 250px;
-=======
+
 	color: #FE6440;
 	border: solid 1px #FE6440;
 	margin-left: 25%;
@@ -179,7 +172,6 @@ span{
 .card_title_ts{
 	height:75px;
 	text-align: center;
->>>>>>> animalerie
 }
 
 .card_title_ts{
