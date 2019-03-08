@@ -1,3 +1,68 @@
+/**navbar **/
+
+.lead{
+    text-align: center;
+    color: #FFFFFF;
+    font-size: 50;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.display-4{
+    text-align: center;
+    font-size: 80px;
+    color:  rgb(56, 0, 39);
+    font-family: 'Comfortaa', cursive; 
+}
+
+.s1{
+    color: #FF7A00;
+}
+
+.navbar {
+    background-color: #2A5762;
+    top: 0;
+    position: relative;
+    transition: top 0.5s;
+    height: 70px;
+}
+    
+.navbar.expand {
+    top: 100px;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 22px;
+    color: #FFFFFF!important;
+    margin-right: 20px;
+}
+
+.nav-link:hover {
+    color: #FF7A00!important;
+}
+
+.nav-item {
+    list-style-type: none;
+}
+
+.nav-link2{
+    font-family: 'Roboto', sans-serif;
+    color: #FFFFFF;
+    font-size: 25px;
+    margin-left: justify;
+    padding-top: 17px;
+}
+
+.photo{
+    width: 50px;
+    padding-right: 8px;
+}
+
+.navbar-brand p{
+    display: inline-block;
+}
+
 /** jumbotron **/
 
 .jumbotron {
@@ -163,6 +228,7 @@ form  {
 .text-center {
 	color: #FFFFFF;
 }
+
 .logofooter {
 	width : 18%;
 }
@@ -173,6 +239,9 @@ body {
 	background-image: url("images/full-bloom.png");
 }
 
+section {
+	padding-bottom: 110px;
+}
 
 /**image**/
 
