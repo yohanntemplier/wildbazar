@@ -2,6 +2,10 @@ body {
     background-image: url(Images/full-bloom.png);
 }
 
+.nav-item li {
+    list-style-type: none;
+}
+
 .lead{
     text-align: center;
     color: rgb(56, 0, 39);
@@ -53,9 +57,11 @@ body {
 }
 
 .card.c img{
-   position: relative;
-   filter: brightness(0.3);
-}
+    position: relative;
+    filter: brightness(0.3);
+    max-height: 300px;
+    object-fit: cover;
+ }
 
 .card.c h5 {
     font-family: 'Comfortaa', cursive;
@@ -74,89 +80,52 @@ body {
     transition: 0.5s ease;
 }
 
-.card.c :hover {
-    box-shadow: 2px 1px 5px gray;
-}
-
 .card.c h5:hover{
     color: #FF6541;
 }
 
-/* Footer */
-
-.footer {
-	background-color: #2A5762;
-	padding-top: 10px;
-	padding-left: 20px;
-	line-height: 40px;
-}
-
-.wild {
-	font-size: 30px;
-	color: #FFFFFF;
-	font-family: 'Comfortaa', cursive!important;
-}
-.adress {
-	color: #FFFFFF;
-}
-
-.row {
-	 font-family: 'Roboto', sans-serif;
-	 font-size : 20px
- }
-.lienfoot {
-	color:#FFFFFF;
-
-}
-
-.lienfoot:hover {
-	text-decoration: none;
-	color: #FF7A00;
-}
  
-form  {
-	color: #FFFFFF;
+
+/**About Us**/
+
+
+.container-fluid {
+	padding-top: 30px;
 }
 
-.text-center {
-	color: #FFFFFF;
+.aboutus {
+	padding: 15px 0px 10px 40px;
+	width: 100%;
+	height: auto;
 }
 
-
-/**button **/
-
-.btn {
-	border: solid 1px #FF7A00;
-	background-color: #FFFFFF;
-	color: #FF7A00;
-
+.card-titleA {
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	text-shadow: 2px 2px;
+	margin-bottom: 20px;
 }
 
-.btn:hover {
-	background-color:  #FF7A00;
-	color: #FFFFFF; 
+.card-textA { 
+	font-family: 'Roboto', sans-serif;
 }
 
-/**texte**/
+/*TOP SELLING SECTION*/
 
-.titre {
-	color: #FF7A00;
-}
-
- /*TOP SELLING SECTION*/
+.text-center
 
 .titre_top_selling{
 	font-size: 3em;
 	padding: 10px;
 	font-family: Comfortaa;
-	color: black;
 }
 
 span{
 	color: #FF7A00;
 }
 
-.top_selling_txt{
+.text-center.top_selling_txt{
 	padding: 15px;
 	font-family: Roboto;
 	font-size: 1.5em;
@@ -183,6 +152,8 @@ span{
 .card-ts{
 	border: solid 1px rgba(0, 0, 0, 0.125);
 	margin-top: 13px;
+	object-fit: cover;
+	height: 250px;
 }
 
 .card_title_ts{
@@ -227,35 +198,67 @@ span{
 	opacity: 0.9;
 }
 
-/* FIN TOP SELLING SECTION*/
+/* Footer */
 
-
-
-/**About Us**/
-
-
-.container-fluid {
-	padding-top: 30px;
-
-}
-
-.aboutus {
-	padding: 15px 0px 10px 40px;
-	width: 100%;
-	height: auto;
-
-}
-
-.card-titleA {
+.footer {
+	background-color: #2A5762;
 	padding-top: 10px;
-	text-align: center;
-	font-family: 'Comfortaa', cursive;
-	text-shadow: 2px 2px;
-	margin-bottom: 20px;
+	padding-left: 20px;
+	line-height: 40px;
 }
 
-.card-textA { 
-	font-family: 'Roboto', sans-serif;
-	
+.wild {
+	font-size: 30px;
+	color: #FFFFFF;
+	font-family: 'Comfortaa', cursive!important;
+}
+.adress {
+	color: #FFFFFF;
 }
 
+.row {
+	 font-family: 'Roboto', sans-serif;
+	 font-size : 20px
+ }
+
+.lienfoot {
+	color:#FFFFFF;
+}
+
+.lienfoot:hover {
+	text-decoration: none;
+	color: #FF7A00;
+}
+
+.logofooter {
+    width: 18%;
+}
+ 
+form  {
+	color: #FFFFFF;
+}
+
+.text-center {
+	color: #FFFFFF;
+}
+
+
+/**button **/
+
+.btn {
+	border: solid 1px #FF7A00;
+	background-color: #FFFFFF;
+	color: #FF7A00;
+
+}
+
+.btn:hover {
+	background-color:  #FF7A00;
+	color: #FFFFFF; 
+}
+
+/**texte**/
+
+.titre {
+	color: #FF7A00;
+}
