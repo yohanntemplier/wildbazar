@@ -84,20 +84,48 @@ body {
     color: #FF6541;
 }
 
- /*TOP SELLING SECTION*/
+ 
 
- .titre_top_selling{
+/**About Us**/
+
+
+.container-fluid {
+	padding-top: 30px;
+}
+
+.aboutus {
+	padding: 15px 0px 10px 40px;
+	width: 100%;
+	height: auto;
+}
+
+.card-titleA {
+	padding-top: 10px;
+	text-align: center;
+	font-family: 'Comfortaa', cursive;
+	text-shadow: 2px 2px;
+	margin-bottom: 20px;
+}
+
+.card-textA { 
+	font-family: 'Roboto', sans-serif;
+}
+
+/*TOP SELLING SECTION*/
+
+.text-center
+
+.titre_top_selling{
 	font-size: 3em;
 	padding: 10px;
 	font-family: Comfortaa;
-	color: black;
 }
 
 span{
 	color: #FF7A00;
 }
 
-.top_selling_txt{
+.text-center.top_selling_txt{
 	padding: 15px;
 	font-family: Roboto;
 	font-size: 1.5em;
@@ -168,31 +196,6 @@ span{
 	font-size: 1.4em;
 	font-family: Roboto;
 	opacity: 0.9;
-}
-
-/**About Us**/
-
-
-.container-fluid {
-	padding-top: 30px;
-}
-
-.aboutus {
-	padding: 15px 0px 10px 40px;
-	width: 100%;
-	height: auto;
-}
-
-.card-titleA {
-	padding-top: 10px;
-	text-align: center;
-	font-family: 'Comfortaa', cursive;
-	text-shadow: 2px 2px;
-	margin-bottom: 20px;
-}
-
-.card-textA { 
-	font-family: 'Roboto', sans-serif;
 }
 
 /* Footer */
