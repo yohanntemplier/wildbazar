@@ -215,7 +215,8 @@ span{
 	font-family: Roboto;
 	opacity: 0.9;
 }
-/* Footer */
+
+/**footer**/
 
 .footer {
 	background-color: #2A5762;
@@ -237,18 +238,14 @@ span{
 	 font-family: 'Roboto', sans-serif;
 	 font-size : 20px
  }
-
 .lienfoot {
 	color:#FFFFFF;
+
 }
 
 .lienfoot:hover {
 	text-decoration: none;
 	color: #FF7A00;
-}
-
-.logofooter {
-    width: 18%;
 }
  
 form  {
@@ -259,6 +256,9 @@ form  {
 	color: #FFFFFF;
 }
 
+.logofooter {
+	width : 18%;
+}
 
 /**button **/
 
