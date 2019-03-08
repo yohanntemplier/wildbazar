@@ -1,5 +1,5 @@
 body {
-    background-image: url("images/full-bloom.png");
+    background-image: url(Images/full-bloom.png);
 }
 
 .nav-item li {
@@ -111,15 +111,15 @@ body {
 	font-family: 'Roboto', sans-serif;
 }
 
-
 /*TOP SELLING SECTION*/
+
+.text-center
 
 .titre_top_selling{
 	font-size: 3em;
 	padding: 10px;
 	font-family: Comfortaa;
 }
-
 
 span{
 	color: #FF7A00;
@@ -130,10 +130,7 @@ span{
 	font-family: Roboto;
 	font-size: 1.5em;
 	color: black;
-
-.top_selling_txt{
-	padding: 15px;
-	font-family: Roboto;
+}
 
 .settings_card{
 	max-width: 350px;
@@ -142,7 +139,6 @@ span{
 }
 
 .btn_ts{
-
 	color: #FF7A00;
 	border: solid 1px #FF7A00;
 	font-family: Roboto;
@@ -158,20 +154,6 @@ span{
 	margin-top: 13px;
 	object-fit: cover;
 	height: 250px;
-
-	color: #FE6440;
-	border: solid 1px #FE6440;
-	margin-left: 25%;
-}
-
-.card-ts{
-	border: solid 1px rgba(0, 0, 0, 0.125);
-	margin-top: 13px;
-}
-
-.card_title_ts{
-	height:75px;
-	text-align: center;
 }
 
 .card_title_ts{
@@ -216,7 +198,7 @@ span{
 	opacity: 0.9;
 }
 
-/**footer**/
+/* Footer */
 
 .footer {
 	background-color: #2A5762;
@@ -238,14 +220,18 @@ span{
 	 font-family: 'Roboto', sans-serif;
 	 font-size : 20px
  }
+
 .lienfoot {
 	color:#FFFFFF;
-
 }
 
 .lienfoot:hover {
 	text-decoration: none;
 	color: #FF7A00;
+}
+
+.logofooter {
+    width: 18%;
 }
  
 form  {
@@ -256,10 +242,23 @@ form  {
 	color: #FFFFFF;
 }
 
-.logofooter{
-	width: 18%;
+
+/**button **/
+
+.btn {
+	border: solid 1px #FF7A00;
+	background-color: #FFFFFF;
+	color: #FF7A00;
+
 }
 
-section {
-	padding-bottom: 110px;
+.btn:hover {
+	background-color:  #FF7A00;
+	color: #FFFFFF; 
+}
+
+/**texte**/
+
+.titre {
+	color: #FF7A00;
 }
