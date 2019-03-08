@@ -115,6 +115,8 @@ body {
 
 .prix {
 	font-weight: bold;
+	font-size: 30px;
+	color: black;
 }
 
 li {
