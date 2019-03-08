@@ -145,15 +145,20 @@ form  {
 
  /*TOP SELLING SECTION*/
 
- .titre_top_selling{
+.titre_top_selling{
 	font-size: 3em;
 	padding: 10px;
 	font-family: Comfortaa;
 }
 
+span{
+	color: #FF7A00;
+}
+
 .top_selling_txt{
 	padding: 15px;
 	font-family: Roboto;
+	font-size: 1.5em;
 }
 
 .settings_card{
@@ -163,9 +168,14 @@ form  {
 }
 
 .btn_ts{
-	color: #FE6440;
-	border: solid 1px #FE6440;
-	margin-left: 25%;
+	color: #FF7A00;
+	border: solid 1px #FF7A00;
+	font-family: Roboto;
+}
+
+.btn_ts:hover {
+	background-color: #FF7A00;
+	color: white;
 }
 
 .card-ts{
@@ -176,6 +186,43 @@ form  {
 .card_title_ts{
 	height:75px;
 	text-align: center;
+}
+
+.modal-content-ts{
+	max-width: 50rem;
+}
+
+.mod-title-ts{
+	font-size: 2em;
+	font-family: Comfortaa;
+}
+
+.prix-ts{
+	font-weight: bold;
+	font-size: 2em;
+}
+
+.desc-ts{
+	margin-top: 20px;
+}
+
+.carac-modal{
+	margin-left: 25px;
+	font-size: 2em;
+}
+
+.price{
+	display: block;
+	position: absolute;
+	width: 120px;
+	text-align: center;
+	align-self: center;
+	border-radius: 15px;
+	margin-top: 14px;
+	font-weight: bold;
+	font-size: 1.4em;
+	font-family: Roboto;
+	opacity: 0.9;
 }
 
 /* FIN TOP SELLING SECTION*/
