@@ -21,7 +21,7 @@
 										<a class="nav-link" href="papeterie.php">Papeterie</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="page_animaux2.php">Animalerie</a>
+										<a class="nav-link" href="page_animaux3.php">Animalerie</a>
 								</li>
 								<li class="nav-item">
 										<a class="nav-link" href="accessoire.php">Accessoires</a>
