@@ -1,6 +1,6 @@
 <?php
 ?>
-<!-- Footer -->
+
 		<section class = "footer">
 			<footer class="container-fluid">
 				<div class="row footer">
@@ -10,7 +10,7 @@
 							<div class="col-6"><a class="lienfoot" href="PageTextiles.html">Textile</a></div>
 						</div>
 						<div class="row">
-							<div class="col-6"><a class="lienfoot" href="#">A propos de nous</a></div>
+							<div class="col-6"><a class="lienfoot" href="#">A propos</a></div>
 							<div class="col-6"><a class="lienfoot" href="vaisselle.html">Vaisselle</a></div>
 						</div>
 						<div class="row">
@@ -67,4 +67,3 @@
 				</div>
 			</footer>
 		</section>
-<!--End Footer -->
