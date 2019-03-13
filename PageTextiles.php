@@ -17,39 +17,11 @@
 </head>
 <body>
 <header>
-	<!-- Navbar -->
-    <nav class="navbar navbar-expand-lg navbar-dark"> <a class="navbar-brand" href="#">
-                    <img src="https://imagizer.imageshack.com/img923/8125/xjvCju.png" alt="logo" class="photo">
-                    <p class="nav-link2"><span class="s1">W</span>ild<span class="s1">B</span>azar</p>
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
-                        <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="collapse navbar-collapse" id="navbarNavDropdown">
-                    <ul class="navbar-nav">
-                        <li class="nav-item active">
-                            <a class="nav-link" href="index.php">Home <span class="sr-only">(current)</span></a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="PageTextiles.html">Textiles</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="vaisselle.html">Vaisselle</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="papeterie.html">Papeterie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="page_animaux2.html">Animalerie</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="accessoire.html">Accessoires</a>
-                        </li>
-                     
-                    </ul>
-                </div>
-		</nav>
-<!-- Fin navbar -->
+
+<?php
+include 'header.php';
+?>
+
 <!-- Jumbotron -->
 
   <div class="jumbotron d-flex align-items-center flex-column">
@@ -691,73 +663,12 @@
  <!-- fin Cards -->
 
 
-<!-- Footer -->
-		<section class = "footer">
-			<footer class="container-fluid">
-				<div class="row footer">
-					<div class="col-sm">
-						<div class="row tableFooter">
-							<div class="col-5"><a class="lienfoot" href="#">Home</a></div>
-							<div class="col-5"><a class="lienfoot" href="#">Textile</a></div>
-						</div>
-						<div class="row">
-							<div class="col-5"><a class="lienfoot" href="#">About us</a></div>
-							<div class="col-5"><a class="lienfoot" href="#">Vaisselle</a></div>
-						</div>
-						<div class="row">
-							<div class="col-5"><a class="lienfoot" href="#">Top selling</a></div>
-							<div class="col-5"><a class="lienfoot" href="#">Animalerie</a></div>
-						</div>				
-						<div class="row">
-							<div class="col-5"><a class="lienfoot" href="#">Contact</a></div>
-							<div class="col-5"><a class="lienfoot" href="#">Papeterie</a></div>
-						</div>				
-						<div class="row">
-							<div class="col-5"><a class="lienfoot" href="#">Legal mentions</a></div>
-							<div class="col-5"><a class="lienfoot" href="#">Accessoires</a></div>
-						</div>
-						<br>	
-					</div>	
-					<div class="col-sm">
-						<div class = "wild">
-							<div class="col-8">
-							<p> <img src="https://imagizer.imageshack.com/img923/8125/xjvCju.png" class="logofooter" alt="logo"> <span class="titre"> W</span>ild<span class="titre">B</span>azar</p> </div>
-						</div>
-						
-						<div class ="adress">
-							<div class="col-7 ">
-	      					<p>1 rue de la Paix<br>
-	      					75000 Paris<br>
-	      					01-23-45-67-89</p>
-	      					</div>
-      					</div>	
-      				</div>
-					<div class="col-12 col-lg-6 justify-content-center collumn-right">
-      					<h3 class="text-center" id="contactUs">Contact us</h3>
-      					<form>
-		      				<div class="form-group row">
-		      					<label for="inputEmail3" class="col-3 col-form-label">Email</label>
-		      					<div class="col-8">
-		      					<input type="email" class="form-control" id="inputEmail3" placeholder="Email">
-		      					</div>
-		      				</div>
-		      				<div class="form-group row">
-		      					<label for="inputPassword3" class="col-3 col-form-label">Message</label>
-		      					<div class="col-8"> 
-								<textarea class="form-control" id="inputPassword3" rows="3"></textarea>
-		      					</div>
-		      				</div>
-		      				<div class="form-group row">
-		      					<div class="col-12 text-center">
-		      					<button type="submit" class="btn">Submit</button>
-		      					</div>
-	      					</div>
-      					</form>	
-      				</div>						
-				</div>
-			</footer>
-		</section>
-<!--End Footer --> 
+<?php
+
+include 'footer.php';
+
+?>
+?>
   <script>
     $('#myModal').on('shown.bs.modal', function() {
       $('#myInput').trigger('focus')
