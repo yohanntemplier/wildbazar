@@ -1,5 +1,5 @@
 body {
-    background-image: url(Images/full-bloom.png);
+    background-image: url("images/full-bloom.png");
 }
 
 .nav-item li {
@@ -88,28 +88,38 @@ body {
 
 /**About Us**/
 
+.secabout {
+	padding-top: 60px;
+	padding-bottom: 60px;
 
-.container-fluid {
-	padding-top: 30px;
 }
 
 .aboutus {
-	padding: 15px 0px 10px 40px;
+	padding: 40px;
 	width: 100%;
 	height: auto;
+	
 }
 
 .card-titleA {
-	padding-top: 10px;
+	color: white;
+	padding-top: 40px;
 	text-align: center;
 	font-family: 'Comfortaa', cursive;
-	text-shadow: 2px 2px;
 	margin-bottom: 20px;
 }
 
 .card-textA { 
+	padding: 40px;
 	font-family: 'Roboto', sans-serif;
+	color: white;
 }
+
+.cardAb{
+	border : solid 5px #2A5762;
+	background-color: #2A5762;
+}
+
 
 /*TOP SELLING SECTION*/
 

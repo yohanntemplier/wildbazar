@@ -66,18 +66,21 @@
 				</div>
 			</div>
 	</section>
-	<section id="Aboutus">
+
+<!-- About us -->
+	<section id="Aboutus" class="secabout">
 		<div class="container-fluid">
-			<div class="card mb-3 bg-light">
+			<div class="card mb-3  cardAb">
 				<div class="row no-gutters">
 					<div class="col-md-3">
 						<img src="https://i.imgur.com/nXjRgyc.jpg" class="aboutus" alt="Our team" />
 					</div>
 					<div class="col-md-9">
 						<div class="card-body">
-							<h2 class="card-titleA">About us</h2>
-							<p class="card-textA">Depuis son lancement en 2019 par le gang de The Table, Wild Bazar a déjà livré des MILLIONS d'objet imprimés personnalisés à 								des clients qui ont grâce à nous ont du style!<br> Nous mettons tout en oeuvre pour travailler avec des graphiste très talentueux, bénévole
-							et toujours libre de droit of course !<br> En faisant confiance à Wild Bazar, vous avez contribué à créer plus de 5 emplois directs en France, 								merci !
+							<h2 class="card-titleA"><span class="s1">A</span> propo<span class="s1">s</span></h2>
+							<p class="card-textA">Depuis son lancement en 2019 par le gang de The Table, Wild Bazar a déjà livré des MILLIONS d'objet imprimés personnalisés à 								des clients qui ont grâce à nous ont du style!<br> 
+							Nous mettons tout en oeuvre pour travailler avec des graphiste très talentueux, bénévole et toujours libre de droit of course !
+							<br> En faisant confiance à Wild Bazar, vous avez contribué à créer plus de 5 emplois directs en France, 								merci !
 							</p>
 						</div>	
 					</div>
@@ -85,6 +88,10 @@
 			</div>
 		</div>
 	</section>
+<!--End About us -->
+
+
+
 	<section id="top-selling">
 		<div class="container">
 			<div class="row justify-content-center">
