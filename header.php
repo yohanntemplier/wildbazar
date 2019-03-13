@@ -1,4 +1,3 @@
-<header>
 		<nav class="navbar navbar-expand-lg navbar-dark" style="background-color: #2A5762;">
 				<a class="navbar-brand" href="index.php">
 						<img src="https://imagizer.imageshack.com/img923/8125/xjvCju.png" alt="..." class="photo">
@@ -10,24 +9,23 @@
 				<div class="collapse navbar-collapse" id="navbarNavDropdown">
 						<ul class="navbar-nav">
 								<li class="nav-item active">
-										<a class="nav-link" href="#">About us <span class="sr-only">(current)</span></a>
+										<a class="nav-link" href="#">Accueil<span class="sr-only">(current)</span></a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="PageTextiles.html">Textiles</a>
+										<a class="nav-link" href="PageTextiles.php">Textiles</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="vaisselle.html">Vaisselle</a>
+										<a class="nav-link" href="vaisselle.php">Vaisselle</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="papeterie.html">Papeterie</a>
+										<a class="nav-link" href="papeterie.php">Papeterie</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="page_animaux1.html">Animalerie</a>
+										<a class="nav-link" href="page_animaux2.php">Animalerie</a>
 								</li>
 								<li class="nav-item">
-										<a class="nav-link" href="accessoire.html">Accessoires</a>
+										<a class="nav-link" href="accessoire.php">Accessoires</a>
 								</li>
 						</ul>
 				</div>
 		</nav>
-</header>
