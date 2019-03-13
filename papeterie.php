@@ -57,7 +57,7 @@
         <p class="lead">
         Pour donner du style à votre page, <br>vous trouverez ici tout pour le bureau, mais en mieux ! .</p>
 
-        <a class="btn btn-lg d-flex align-items-center" href="#" role="button">+ ADD NEW</a>
+        <a class="btn btn-lg d-flex align-items-center" href="#" role="button">Ajouter</a>
   </div>
 <!-- Jumbotron -->
 </header>
