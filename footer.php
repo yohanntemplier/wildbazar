@@ -6,24 +6,24 @@
 				<div class="row footer">
 					<div class="col-sm">
 						<div class="row tableFooter">
-							<div class="col-6"><a class="lienfoot" href="index.html">Accueil</a></div>
-							<div class="col-6"><a class="lienfoot" href="PageTextiles.html">Textile</a></div>
+							<div class="col-6"><a class="lienfoot" href="index.php">Accueil</a></div>
+							<div class="col-6"><a class="lienfoot" href="PageTextiles.php">Textile</a></div>
 						</div>
 						<div class="row">
 							<div class="col-6"><a class="lienfoot" href="#">A propos</a></div>
-							<div class="col-6"><a class="lienfoot" href="vaisselle.html">Vaisselle</a></div>
+							<div class="col-6"><a class="lienfoot" href="vaisselle.php">Vaisselle</a></div>
 						</div>
 						<div class="row">
 							<div class="col-6"><a class="lienfoot" href="#">Meilleures ventes</a></div>
-							<div class="col-6"><a class="lienfoot" href="page_animaux2.html">Animalerie</a></div>
+							<div class="col-6"><a class="lienfoot" href="page_animaux3.php">Animalerie</a></div>
 						</div>
 						<div class="row">
 							<div class="col-6"><a class="lienfoot" href="#">Contact</a></div>
-							<div class="col-6"><a class="lienfoot" href="papeterie.html">Papeterie</a></div>
+							<div class="col-6"><a class="lienfoot" href="papeterie.php">Papeterie</a></div>
 						</div>
 						<div class="row">
 							<div class="col-6"><a class="lienfoot" href="#">Mentions légales</a></div>
-							<div class="col-6"><a class="lienfoot" href="accessoire.html">Accessoires</a></div>
+							<div class="col-6"><a class="lienfoot" href="accessoire.php">Accessoires</a></div>
 						</div>
 						<br>
 					</div>
