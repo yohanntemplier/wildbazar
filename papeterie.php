@@ -36,6 +36,86 @@ include 'header.php';
 <!-- Jumbotron -->
 </header>
 
+<?php
+$listItem = [
+
+    1 => [
+        'title' => 'Classeur absud corp',
+        'description' => 'Un classeur est un porte-documents qui permet de ranger des feuilles de papier de même taille. Il est aussi bien utilisé en tant que matériel scolaire que de matériel de bureau.',
+        'price' => '15€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/classeur_ab-min.png",
+        'modal' => 1],
+
+    2 =>[ 'title' => 'Classeur guitare',
+        'description' => 'Un classeur est un porte-documents qui permet de ranger des feuilles de papier de même taille. Il est aussi bien utilisé en tant que matériel scolaire que de matériel de bureau.',
+        'price' => '10€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/classeur_gui-min.png",
+        'modal' => 2],
+
+    3 => ['title' => 'Stylo absurd corp',
+        'description' => 'Le stylo est un instrument, généralement de forme allongée facilitant sa préhension, qui sert à écrire ou à dessiner.',
+        'price' => '8€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/stylo_ab.png",
+        'modal' => 3],
+
+    4 => [
+        'title' => 'Stylo guitare',
+        'description' => 'Le stylo est un instrument, généralement de forme allongée facilitant sa préhension, qui sert à écrire ou à dessiner.',
+        'price' => '6€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/stylo_gui.png",
+        'modal' => 4],
+
+    5 =>['title' => 'Trousse absurd corp',
+        'description' => 'Une trousse à crayons est une trousse utilisée pour ranger des crayons, stylos et du matériel d\'écriture. On peut également se servir d\'une trousse à crayons pour ranger d\'autres articles de papeterie, tels taille-crayons, gomme, colle, effaceur, ciseaux, règle, etc.',
+        'price' => '11€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/trousse_ab.png",
+        'modal' => 5],
+
+    6 => ['title' => 'Trousse guitare',
+        'description' => 'Une trousse à crayons est une trousse utilisée pour ranger des crayons, stylos et du matériel d\'écriture. On peut également se servir d\'une trousse à crayons pour ranger d\'autres articles de papeterie, tels taille-crayons, gomme, colle, effaceur, ciseaux, règle, etc.',
+        'price' => '9€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/trousse_gui.png",
+        'modal' => 6],
+
+    7 => [
+        'title' => 'Agenda absurd corp',
+        'description' => 'Un agenda est un outil permettant d\'associer des actions à des moments, et d\'organiser ainsi son temps. Il est utilisé afin de pouvoir donner à son utilisateur la possibilité de planifier, de noter son emploi du temps, ses rendez-vous, etc.',
+        'price' => '14€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/art-artistic-blank-616849ab-min.png",
+        'modal' => 7],
+
+    8 =>[ 'title' => 'Agenda guitare',
+        'description' => 'Un agenda est un outil permettant d\'associer des actions à des moments, et d\'organiser ainsi son temps. Il est utilisé afin de pouvoir donner à son utilisateur la possibilité de planifier, de noter son emploi du temps, ses rendez-vous, etc.',
+        'price' => '12€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/art-artistic-blank-616849gui-min.png",
+        'modal' => 8],
+
+    9 => ['title' => 'Tapis de souris absurd',
+        'description' => 'Petit tapis de bureau antidérapant pour améliorer l\'efficacité d\'utilisation et de précision des souris informatique à détection de mouvement mécanique à boule, ou infrarouge.',
+        'price' => '4€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/tapis_de_souris%20ab.png",
+        'modal' => 9],
+
+    10 => [
+        'title' => 'Tapis de souris guitare',
+        'description' => 'Petit tapis de bureau antidérapant pour améliorer l\'efficacité d\'utilisation et de précision des souris informatique à détection de mouvement mécanique à boule, ou infrarouge.',
+        'price' => '2€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/tapis_desouris_gui.png",
+        'modal' => 10],
+
+    11 =>[ 'title' => 'Corbeille absurd corp',
+        'description' => 'Une corbeille à papier est un type de poubelle prévue pour recevoir les déchets d\'un bureau, particulièrement des papiers.',
+        'price' => '7€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/carbeille_a_papier%20ab-min.png",
+        'modal' => 11],
+
+    12 => ['title' => 'Corbeille guitare',
+        'description' => 'Une corbeille à papier est un type de poubelle prévue pour recevoir les déchets d\'un bureau, particulièrement des papiers.',
+        'price' => '5€',
+        'picture' => "https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/carbeille_a_papier%20gui-min.png",
+        'modal' => 12],
+]
+?>
 
 <!--Cards -->
   <section>
@@ -43,537 +123,16 @@ include 'header.php';
 
           <div class="row justify-content-between">
 
-            <div class="card col-lg-3 col-sm-5 col-md-4">
+		<?php
+                    foreach ($listItem as $key => $value){
+                        include 'cardpapeterie.php';
+                    }
+             	 ?>
 
-            <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/classeur_ab-min.png" class="card-img-top img-thumbnail" alt="classeur">
-                <div class="top-right badge-pill badge-secondary">9,99 €</div>
-                <div class="card-body col-lg-3">
-                <p class="card-title">Classeur absud corp</p>
-            
-            <!-- Button trigger modal -->
-                <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal">
-  								En savoir plus
-							   </button>
-
-            <!-- Modal -->
-                    <div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog modal-lg" role="document">
-                            <div class="modal-content">
-                                <div class="modal-header">
-                                <h5 class="modal-title" id="exampleModalLabel">Classeur absurd corp</h5>
-                                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          						          <span aria-hidden="true">&times;</span>
-        					              </button>
-                                </div>
-                                <div class="modal-body row">
-                   
-                  		              <div class="col-lg-6 col-md-12">
-                                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/classeur_ab-min.png" class="card-img-top" alt="classeur" />
-                		                </div>
-                		                    <div class="col-lg-6 col-md-12">
-                                        <p class="textmodal">
-
-                                        <span class="prix">9,99€</span><br><p>Un classeur est un porte-documents qui permet de ranger des feuilles de papier de même taille. Il est aussi bien utilisé en tant que matériel scolaire que de matériel de bureau.</p>
-
-                                        </div>
-                                    </div>
-                                    <div class="modal-footer flex-column ">
-                                    <h6>Caractéristiques :</h6>
-                                    <ul>
-                    	                 <li>- Différentes tailles et colories</li>
-                    	                 <li>- 100% matière recyclable</li>
-                                    </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/classeur_gui-min.png" class="card-img-top img-thumbnail" alt="classeur" />
-          <div class="top-right badge-pill badge-secondary">8,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Classeur guitare</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal2">
-  En savoir plus
-
-</button>
-
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal2" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel2" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel2">Classeur guitare</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-
-                  <div class="modal-body row">
-                
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/classeur_gui-min.png" class="card-img-top" alt="classeur" />
-                </div>
-                  	<div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    	<span class="prix">8,99€</span><br><p>Un classeur est un porte-documents qui permet de ranger des feuilles de papier de même taille. Il est aussi bien utilisé en tant que matériel scolaire que de matériel de bureau.</p>
-                </div>
-                  </div>
-                  <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Différentes tailles et colories</li>
-                      <li>- 100% matière recyclable</li>
-                    </ul>
-
-
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/stylo_ab.png" class="card-img-top img-thumbnail" alt="stylo" />
-          <div class="top-right badge-pill badge-secondary">7,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Stylo absurd corp</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal3">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal3" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel3" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel3">Stylo absud corp</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                 
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/stylo_ab.png" class="card-img-top" alt="stylo" />
-                </div>
-                 	<div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    <span class="prix">7,99€</span><br><p>Le stylo est un instrument, généralement de forme allongée facilitant sa préhension, qui sert à écrire ou à dessiner.</p>
-                </div>
-                  </div>
-                  <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Plusieurs modèles et couleurs</li>
-                    	<li>- rechargeabla</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
+	  </div>
       </div>
-      <div class="row justify-content-between">
-        
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/stylo_gui.png" class="card-img-top img-thumbnail" alt="stylo" />
-          <div class="top-right badge-pill badge-secondary">5,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Stylo guitare</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal4">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal4" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel4" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel4">Stulo guitare</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  	<div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/stylo_gui.png" class="card-img-top" alt="Stylo" />
-                </div>
-                  	<div class="col-lg-6 col-md-12">
-                    <p>
-                    <span class="prix">5,99€</span><br><p>Le stylo est un instrument, généralement de forme allongée facilitant sa préhension, qui sert à écrire ou à dessiner.</p>
-                </div>
-                  </div>
-                   <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Plusieurs modèles et couleurs</li>
-                      <li>- rechargeabla</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/trousse_ab.png" class="card-img-top img-thumbnail" alt="Trousse" />
-          <div class="top-right badge-pill badge-secondary">10,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Trousse absurd corp</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal5">
-  			En savoir plus
-			</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal5" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel5" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel5">Trousse absurd corp</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/trousse_ab.png" class="card-img-top" alt="T-shirt" />
-                </div>
-                	<div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    <span class="prix">10,99€</span><br><p>Une trousse à crayons est une trousse utilisée pour ranger des crayons, stylos et du matériel d'écriture. On peut également se servir d'une trousse à crayons pour ranger d'autres articles de papeterie, tels taille-crayons, gomme, colle, effaceur, ciseaux, règle, etc. </p>
-                </div>
-                  </div>
-                  <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- différentes tailles et colories</li>
-                    	<li>- plusieurs formes disponibles</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-        	<div class="top-right badge-pill badge-secondary">8,99 €</div>
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/trousse_gui.png" class="card-img-top img-thumbnail" alt="trousse" />
-          <div class="card-body col-lg-3">
-            <p class="card-title">Trousse guitare</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal6">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal6" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel6" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel6">Trousse guitare</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/trousse_gui.png" class="card-img-top" alt="trousse" />
-                </div>
-                	<div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    	<span class="prix">8,99€</span><br><p>Une trousse à crayons est une trousse utilisée pour ranger des crayons, stylos et du matériel d'écriture. On peut également se servir d'une trousse à crayons pour ranger d'autres articles de papeterie, tels taille-crayons, gomme, colle, effaceur, ciseaux, règle, etc. </p>
-                </div>
-                  </div>
-                  <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- différentes tailles et colories</li>
-                      <li>- plusieurs formes disponibles</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    
-<div class="row justify-content-between">
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/art-artistic-blank-616849ab-min.png" class="card-img-top img-thumbnail" alt="agenda" />
-          <div class="top-right badge-pill badge-secondary">13,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Agenda absurd corp</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal7">
-  								En savoir plus
-							</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal7" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel7" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel7">Agenda absurd corp</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          						<span aria-hidden="true">&times;</span>
-        					</button>
-                  </div>
-                  <div class="modal-body row">
-                 
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/art-artistic-blank-616849ab-min.png" class="card-img-top" alt="agenda" />
-                </div>
-                 	<div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    	<span class="prix">13,99€</span><br><p>Un agenda est un outil permettant d'associer des actions à des moments, et d'organiser ainsi son temps. Il est utilisé afin de pouvoir donner à son utilisateur la possibilité de planifier, de noter son emploi du temps, ses rendez-vous, etc. </p>
-                </div>
-                  </div>
-                  <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Différentes tailles et colories</li>
-                    	<li>- 100% en matière recyclable</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/art-artistic-blank-616849gui-min.png" class="card-img-top img-thumbnail" alt="agenda" />
-          <div class="top-right badge-pill badge-secondary">11,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Agenda guitare</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal8">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal8" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel8" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel8">Agenda guitare</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                 
-                <div class="col-6">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/art-artistic-blank-616849gui-min.png" class="card-img-top" alt="agenda" />
-                </div>
-                 	<div class="col-6">
-                    <p class="textmodal">
-                    	<span class="prix">11,99€</span><br><p>Un agenda est un outil permettant d'associer des actions à des moments, et d'organiser ainsi son temps. Il est utilisé afin de pouvoir donner à son utilisateur la possibilité de planifier, de noter son emploi du temps, ses rendez-vous, etc. </p>
-                </div>
-                  </div>
-                   <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Différentes tailles et colories</li>
-                      <li>- 100% en matière recyclable</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/tapis_de_souris%20ab.png" class="card-img-top img-thumbnail" alt="tapis" />
-          <div class="top-right badge-pill badge-secondary">3,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Tapis de souris absurd</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal9">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal9" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel9" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel9">Tapis de souris absurd</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  	
-                    	 <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/tapis_de_souris%20ab.png" class="card-img-top" alt="tapis" />
-                	</div>
-                  
-                  <div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    	<span class="prix">3,99€</span><br><p>Petit tapis de bureau antidérapant pour améliorer l'efficacité d'utilisation et de précision des souris informatique à détection de mouvement mécanique à boule, ou infrarouge. </p>
-                	</div>
-               </div>
-                   <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Taille unique</li>
-                    	<li>- 100% en matière recyclable</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-      <div class="row justify-content-between">
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-        	
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/tapis_desouris_gui.png" class="card-img-top img-thumbnail" alt="tapis" />
-          <div class="top-right badge-pill badge-secondary">1,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Tapis de souris guitare</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal10">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal10" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel10" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel10">Tapis de souris guitare</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/tapis_desouris_gui.png" class="card-img-top" alt="tapis" />
-                </div>
-                	<div class="col-lg-6 col-md-12">
-                		
-                    <p class="textmodal">
-					<span class="prix">1,99€</span><br><p>Petit tapis de bureau antidérapant pour améliorer l'efficacité d'utilisation et de précision des souris informatique à détection de mouvement mécanique à boule, ou infrarouge. </p>
-                </div>
-                  </div>
-                   <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- Taille unique</li>
-                      <li>- 100% en matière recyclable</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/carbeille_a_papier%20ab-min.png" class="card-img-top img-thumbnail" alt="corbeille" />
-          <div class="top-right badge-pill badge-secondary">6,99 €</div>
-          <div class="card-body col-lg-3">
-            <p class="card-title">Corbeille absurd corp</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal11">
-  			En savoir plus
-			</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal11" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel11" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel11">Corbeille absurd corp</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/carbeille_a_papier%20ab-min.png" class="card-img-top" alt="corbeille" />
-                </div>
-                	<div class="col-lg-6 col-md-12">
-                    <p class="textmodal">
-                    <span class="prix">6,99€</span><br><p>Une corbeille à papier est un type de poubelle prévue pour recevoir les déchets d'un bureau, particulièrement des papiers. </p>
-                </div>
-                  </div>
-                  <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- différentes tailles et colories</li>
-                    	<li>- 100% en matière recyclabe</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="card col-lg-3 col-sm-5 col-md-4">
-        	<div class="top-right badge-pill badge-secondary">4,99 €</div>
-          <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/carbeille_a_papier%20gui-min.png" class="card-img-top img-thumbnail" alt="corbeille" />
-          <div class="card-body col-lg-3">
-            <p class="card-title">Corbeille guitare</p>
-            
-            <!-- Button trigger modal -->
-            <button type="button" class="btn col-lg-3" data-toggle="modal" data-target="#exampleModal12">
-  En savoir plus
-</button>
-            <!-- Modal -->
-            <div class="modal fade" id="exampleModal12" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel12" aria-hidden="true">
-              <div class="modal-dialog modal-lg" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title" id="exampleModalLabel12">Corbeille guitare</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-          <span aria-hidden="true">&times;</span>
-        </button>
-                  </div>
-                  <div class="modal-body row">
-                  
-                <div class="col-lg-6 col-md-12">
-                    <img src="https://raw.githubusercontent.com/WildCodeSchool/orleans-0219-php-wildbazar6/master/images/carbeille_a_papier%20gui-min.png" class="card-img-top" alt="corbeille" />
-                </div>
-                	<div class="col-lg-6 col-md-12">
-	                    <p class="textmodal">
-	                    <span class="prix">4,99€</span><br><p>Une corbeille à papier est un type de poubelle prévue pour recevoir les déchets d'un bureau, particulièrement des papiers. </p>
-                </div>
-                  </div>
-                   <div class="modal-footer flex-column ">
-                    <h6>Caractéristiques :</h6>
-                    <ul>
-                    	<li>- différentes tailles et colories</li>
-                      <li>- 100% en matière recyclabe</li>
-                    </ul>
-                  </div>
-                </div>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
- <!-- fin Cards -->
+</section>
+<!-- fin Cards -->
 <!-- Footer -->
 <?php
 		include 'footer.php';
