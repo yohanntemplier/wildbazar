@@ -121,7 +121,7 @@ $listItem = [
   <section>
       <div class="container">
 
-          <div class="row justify-content-between">
+          <div class="row justify-content-around">
 
 		<?php
                     foreach ($listItem as $key => $value){
@@ -129,7 +129,7 @@ $listItem = [
                     }
              	 ?>
 
-	  </div>
+	    </div>
       </div>
 </section>
 <!-- fin Cards -->
