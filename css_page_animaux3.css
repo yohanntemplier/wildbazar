@@ -1,7 +1,6 @@
 section{
     background-image: url(images/full-bloom.png);
     padding-top: 50px;
-    padding-bottom: 50px;
 }
 
 body{
@@ -138,7 +137,7 @@ span{
 }
 
 .settings_card{
-    max-width: 350px;
+    max-width: 290px;
     margin-top: 25px;
     margin-bottom: 25px;
 }
@@ -159,7 +158,6 @@ span{
     margin-top: 13px;
     height: 250px;
     object-fit: cover;
-    width: 250px;
 }
 
 .card_title_ts{
@@ -202,4 +200,66 @@ span{
     font-size: 1.4em;
     font-family: Roboto;
     opacity: 0.9;
+}
+
+.footer {
+    background-color: #2A5762;
+    padding-top: 10px;
+    line-height: 40px;
+}
+
+.wild {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive!important;
+}
+.adress {
+    color: #FFFFFF;
+}
+
+.row {
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px
+}
+
+.lienfoot {
+    color:#FFFFFF;
+}
+
+.lienfoot:hover {
+    text-decoration: none;
+    color: #FF7A00;
+}
+
+.logofooter {
+    width: 18%;
+}
+
+form  {
+    color: #FFFFFF;
+}
+
+.footer .text-center {
+    color: #FFFFFF;
+}
+
+
+/**button **/
+
+.btn {
+    border: solid 1px #FF7A00;
+    background-color: #FFFFFF;
+    color: #FF7A00;
+
+}
+
+.btn:hover {
+    background-color:  #FF7A00;
+    color: #FFFFFF;
+}
+
+/**texte**/
+
+.titre {
+    color: #FF7A00;
 }
