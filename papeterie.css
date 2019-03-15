@@ -126,6 +126,7 @@ li {
 
 .card {
 	position: relative;
+	max-width: 290px;
 	
 }
 
@@ -144,6 +145,7 @@ li {
 	object-fit: cover;
 	height: 250px;
 	width: 250px;
+	margin-left: 5px;
 }
 
 /** h1 and co **/
@@ -194,7 +196,7 @@ p {
 
 .footer {
 	background-color: #2A5762;
-	padding-top: 10px;
+	padding-top: 20px;
 	padding-left: 20px;
 	line-height: 40px;
 }
