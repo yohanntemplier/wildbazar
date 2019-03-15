@@ -173,7 +173,7 @@ $product = [
         <?php
 
 foreach ($product as $key => $value) {
-    include 'card.php';
+    include 'cardTextiles.php';
 }
 
 ?>
