@@ -15,6 +15,7 @@ $products = [
     12 => ['title' => 'Litière Guitare', 'price' => 8.99, 'colors' => 'Coloris : Bleu , Rose , Blanc , Noir.', 'madein' => 'Fabriqué en France', 'size' => 'Dimensions : 30x60', 'picture' => 'images/litière_chat_gui.png', 'modal' => 12,]
 
 ]
+
 ?>
 <!DOCTYPE html>
 <html lang="fr">
@@ -32,14 +33,11 @@ $products = [
 <body>
 <header>
     <?php
+        $categoryTitle = 'Animalerie';
+        $categoryDescription = 'Parce que votre ami à quatre pattes a aussi le droit d\'avoir du style. Votre style.';
+        $categoryPicture = 'images/cover-animalerie.jpeg';
         include 'header.php';
     ?>
-    <h2 class="title col"><span>A</span>nimalerie</h2>
-    <div class="row justify-content-center">
-        <p class="title-desc col-12">Parce que votre ami nos amis à quatre pattes ont aussi le droit d'avoir du style. Votre style.</p>
-        <button type="button" class="btn btn1">+ ADD NEW</button>
-    </div>
-    <img src="images/cover-animalerie.jpeg" class="img-cover" alt="Photo de couverture Wild Bazar Animalerie">
 </header>
 <section class="container">
     <div class="row justify-content-around">

@@ -86,7 +86,7 @@ h2 {
     object-fit: cover;
     filter: brightness(0.4);
 }
-.title{
+.title-banner{
     font-family: Comfortaa;
     font-size: 4.5em;
     position: absolute;
@@ -99,7 +99,7 @@ span{
     color: #FF7A00;
 }
 
-.title-desc{
+.title-desc-banner{
     position: absolute;
     z-index: 1;
     font-family: Comfortaa;
