@@ -1,45 +1,3 @@
-<!DOCTYPE html>
-<html lang="fr">
-
-<head>
-    <meta charset="UTF-8" />
-    <title>Textiles</title>
-
-    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
-
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
-
-    <link rel="stylesheet" href="Stylesheetextiles.css">
-
-    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
-
-</head>
-
-<body>
-
-<header>
-
-    <?php
-    include 'header.php';
-    ?>
-
-    <!-- Jumbotron -->
-
-    <div class="jumbotron d-flex align-items-center flex-column">
-        <div class="fond shadow"></div>
-        <h1 class="display-4"><span class="titre">T</span>extile<span class="titre">s</span></h1>
-
-        <p class="lead">
-            Ici vous trouverez des produits unique pour styliser votre chez vous et vous même !<br>
-            libre de droit et 100% laine de yack bien entendu ! </p>
-
-        <a class="btn btn-lg d-flex align-items-center" href="#" role="button">+ ADD NEW</a>
-
-    </div>
-    <!-- Jumbotron -->
-</header>
-
 <?php
 
 $product = [
@@ -52,7 +10,7 @@ $product = [
         'size' => 'Disponible du 36 au 56',
         'composition' => '100% laine de yack BIO',
         'image' => "images/culotte_gui.png",
-         'modal' => 1],
+        'modal' => 1],
 
     2 => [
         'price' => '20€',
@@ -64,7 +22,7 @@ $product = [
         'image' => "images/coussin_ab-min.png",
         'modal' => 2],
 
-     3 => [
+    3 => [
         'price' => '30€',
         'title' => 'Casquette Absurd Corp',
         'description' => 'La casquette Absurd Corp est un couvre-chef et un des articles phares de la marque. ',
@@ -163,8 +121,53 @@ $product = [
 
 ?>
 
-<!--Cards -->
 
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8" />
+    <title>Textiles</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+
+    <link rel="stylesheet" href="StyleSheetTextiles.css">
+
+    <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
+</head>
+
+<body>
+
+<header>
+    <?php
+    $categoryTitle = 'Textiles';
+    $categoryDescription = 'Ici vous trouverez des produits unique pour styliser votre chez vous et vous même !
+    libre de droit et 100% laine de yack bien entendu ! ';
+    $categoryPicture = 'images/'
+    include 'header.php';
+    ?>
+
+    <!-- Jumbotron -->
+
+    <div class="jumbotron d-flex align-items-center flex-column">
+        <div class="fond shadow"></div>
+        <h1 class="display-4"><span class="titre">T</span>extile<span class="titre">s</span></h1>
+
+        <p class="lead">
+            Ici vous trouverez des produits unique pour styliser votre chez vous et vous même !<br>
+            libre de droit et 100% laine de yack bien entendu ! </p>
+
+        <a class="btn btn-lg d-flex align-items-center" href="#" role="button">+ ADD NEW</a>
+
+    </div>
+    <!-- Jumbotron -->
+</header>
+
+
+<!--Cards -->
 <section class="cardsection">
     <div class="container">
         <div class="row justify-content-between">
@@ -177,20 +180,10 @@ foreach ($product as $key => $value) {
 }
 
 ?>
-
         </div>
     </div>
 </section>
 <!-- end card -->
-
-
-
-
-
-
-
-
-
 <?php
 
 include 'footer.php';
@@ -207,6 +200,3 @@ include 'footer.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
