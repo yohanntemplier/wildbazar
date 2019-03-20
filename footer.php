@@ -59,7 +59,7 @@
 		      				</div>
 		      				<div class="form-group row">
 		      					<div class="col-12 text-center">
-		      					<button type="submit" class="btn">Envoyer</button>
+		      					<button type="submit" class="btn btn-footer">Envoyer</button>
 		      					</div>
 	      					</div>
       					</form>

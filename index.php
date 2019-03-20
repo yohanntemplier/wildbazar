@@ -13,14 +13,17 @@
 </head>
 <body>
 	<?php
+    $categoryTitle = 'Wild Bazar';
+    $categoryDescription = 'On y trouve de tout et surtout du n\'importe quoi.';
+    $categoryPicture = 'images/fond_blanc.jpeg';
 	include "header.php";
 	?>
-    <div class="jumbotron jumbotron-fluid bg-light">
-        <div class="container">
-          <h1 class="display-8"><span class="s1">W</span>ild <span class="s1">B</span>azar</h1>
-          <p class="lead">On y trouve de tout et surtout du n'importe quoi .</p>
-        </div>
+    <!--<div class="jumbotron jumbotron-fluid bg-light">
+    <div class="container">
+      <h1 class="display-8"><span class="s1">W</span>ild <span class="s1">B</span>azar</h1>
+      <p class="lead">On y trouve de tout et surtout du n'importe quoi .</p>
     </div>
+</div>-->
     <section id="Categories" class="container-fluid c">
 		<h2>Catégories</h2>
 			<div class="row justify-content-center c">
