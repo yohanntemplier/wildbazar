@@ -44,7 +44,7 @@
 
     				<div class="col-12 col-lg-6 justify-content-center collumn-right">
       					<h3 class="text-center" id="contactUs">Nous contacter</h3>
-      					<form>
+      					<form class="form-footer">
 		      				<div class="form-group row">
 		      					<label for="inputEmail3" class="col-3 col-form-label">Email</label>
 		      					<div class="col-8">
