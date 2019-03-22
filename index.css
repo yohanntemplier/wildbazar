@@ -161,3 +161,45 @@ button.navbar-toggler{
     background-image: url(https://images.pexels.com/photos/1011334/pexels-photo-1011334.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260);
     text-align: center;
 }
+.footer {
+    background-color: #2A5762;
+    padding-top: 10px;
+    padding-left: 30px;
+    line-height: 40px;
+}
+
+.wild {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive!important;
+}
+.adress {
+    color: #FFFFFF;
+}
+
+.row {
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px
+}
+.lienfoot {
+    color:#FFFFFF;
+
+}
+
+.lienfoot:hover {
+    text-decoration: none;
+    color: #FF7A00;
+}
+
+form  {
+    color: #FFFFFF;
+}
+
+.text-center {
+    color: #FFFFFF;
+}
+
+.logofooter {
+    width : 18%;
+}
+
