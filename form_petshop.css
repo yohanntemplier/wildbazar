@@ -1,0 +1,225 @@
+section{
+    background-image: url(images/full-bloom.png);
+    padding-top: 50px;
+}
+
+body{
+    background-image: url(images/full-bloom.png);
+}
+
+footer{
+    padding-top: 50px;
+}
+
+.lead{
+    text-align: center;
+    color: white;
+    font-size: 1em;
+    font-family: 'Comfortaa', cursive;
+
+}
+
+.display-4{
+    text-align: center;
+    font-size: 6em;
+    color:  white;
+    font-family: 'Comfortaa', cursive;
+    letter-spacing: -3px;
+}
+
+.s1{
+    color: #FF7A00;
+}
+
+.navbar{
+
+    background-color: #2A5762;
+    top: 0;
+    position: relative;
+    transition: top 0.5s;
+}
+
+.navbar-nav{
+    color: white;
+}
+
+.nav-item{
+    color: white;
+}
+
+.navbar.expand {
+    top: 100px;
+}
+
+.nav-link{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+}
+
+.nav-link2{
+    font-family: 'Roboto', sans-serif;
+    font-size: 25px;
+    margin-left: 5px;
+    color: white;
+    margin-top: 16px;
+}
+
+.photo{
+    width: 50px;
+    margin-bottom: 14px;
+}
+
+.navbar-brand p{
+    display: inline-block;
+}
+
+h2 {
+    font-family: 'Comfortaa', cursive;
+    font-size: 5em;
+    text-align: center;
+    margin-bottom:1em;
+}
+
+.img-cover{
+    width: 100%;
+    height:28rem;
+    object-fit: cover;
+    filter: brightness(0.4);
+}
+.title-banner{
+    font-family: Comfortaa;
+    font-size: 4.5em;
+    position: absolute;
+    color: white;
+    z-index: 1;
+    margin-top: 75px;
+}
+
+span{
+    color: #FF7A00;
+}
+
+.title-desc-banner{
+    position: absolute;
+    z-index: 1;
+    font-family: Comfortaa;
+    color: white;
+    margin-top: 210px;
+    width: auto;
+    text-align: center;
+}
+
+.btn1{
+    display: none;
+    position: absolute;
+    z-index: 1;
+    border: solid 1px #FF7A00;
+    color: #FF7A00;
+    width: 120px;
+    margin-top: 300px;
+}
+
+.btn1:hover{
+    background-color: #FF7A00;
+    color: white;
+    border: none;
+}
+
+.warning{
+    color: #FF7A00;
+}
+
+/*PAGE*/
+
+.label-title{
+    font-family: Comfortaa, cursive;
+    font-size: 2em;
+}
+
+.form-petshop{
+    box-shadow: 5px 5px lightgrey blur;
+    border-radius: 15px;
+    background-color: #2A5762;
+    margin-top: 50px;
+    padding: 30px;
+}
+
+.label-form{
+    font-family: Roboto, cursive;
+    padding-top: 10px;
+    font-size: 1em;
+}
+
+.btn-petshop{
+    margin-top: 10px;
+}
+
+.success{
+    color: #FF7A00;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
+/*FOOTER*/
+
+.footer {
+    background-color: #2A5762;
+    padding-top: 10px;
+    line-height: 40px;
+}
+
+.wild {
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive!important;
+}
+.adress {
+    color: #FFFFFF;
+}
+
+.row {
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px
+}
+
+.lienfoot {
+    color:#FFFFFF;
+}
+
+.lienfoot:hover {
+    text-decoration: none;
+    color: #FF7A00;
+}
+
+.logofooter {
+    width: 18%;
+}
+
+form{
+    color: #FFFFFF;
+}
+
+.footer .text-center {
+    color: #FFFFFF;
+}
+
+
+/**button **/
+
+.btn {
+    border: solid 1px #FF7A00;
+    background-color: #FFFFFF;
+    color: #FF7A00;
+
+}
+
+.btn:hover {
+    background-color:  #FF7A00;
+    color: #FFFFFF;
+}
+
+/**texte**/
+
+.titre {
+    color: #FF7A00;
+}
