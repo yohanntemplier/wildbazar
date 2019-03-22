@@ -43,6 +43,25 @@ body {
     display: inline-block;
 }
 
+button {
+    display: flex;
+    justify-content: center;
+}
+
+/**button **/
+
+.btn {
+    border: solid 1px #FF7A00;
+    background-color: #FFFFFF;
+    color: #FF7A00;
+
+}
+
+.btn:hover {
+    background-color:  #FF7A00;
+    color: #FFFFFF;
+}
+
 .card-text {
     font-size: 0.8em;
 }
@@ -61,6 +80,11 @@ body {
 .card-img-top {
     max-height: 160px;
     object-fit: cover;
+}
+
+.card {
+    max-width : 300px;
+    margin-top : 1em;
 }
 
 .details {
@@ -122,43 +146,50 @@ body {
 /* Footer */
 
 .footer {
-	background-color: #2A5762;
-	padding-top: 10px;
-	padding-left: 20px;
-	line-height: 40px;
+    background-color: #2A5762;
+    padding-top: 10px;
+    padding-left: 20px;
+    line-height: 40px;
 }
 
 .wild {
-	font-size: 30px;
-	color: #FFFFFF;
-	font-family: 'Comfortaa', cursive!important;
+    font-size: 30px;
+    color: #FFFFFF;
+    font-family: 'Comfortaa', cursive!important;
 }
 .adress {
-	color: #FFFFFF;
+    color: #FFFFFF;
 }
 
 .row {
-	 font-family: 'Roboto', sans-serif;
-	 font-size : 20px
- }
-.lienfoot {
-	color:#FFFFFF;
+    font-family: 'Roboto', sans-serif;
+    font-size : 20px
+}
 
+.lienfoot {
+    color:#FFFFFF;
 }
 
 .lienfoot:hover {
-	text-decoration: none;
-	color: #FF7A00;
-}
- 
-form  {
-	color: #FFFFFF;
+    text-decoration: none;
+    color: #FF7A00;
 }
 
-.text-center {
-	color: #FFFFFF;
+.logofooter {
+    width: 18%;
 }
 
+.form-footer  {
+    color: #FFFFFF;
+}
+
+.footer .text-center {
+    color: #FFFFFF;
+}
+
+.footer {
+    margin-top : 1em;
+}
 
 /**button **/
 
@@ -173,3 +204,5 @@ form  {
 	background-color:  #FF7A00;
 	color: #FFFFFF; 
 }
+
+
