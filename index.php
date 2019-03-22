@@ -30,7 +30,7 @@
 		<h2>Catégories</h2>
 			<div class="row justify-content-center c">
 				<div class="col-sm-6 col-md-5 col-lg-4 c">
-					<a href="PageTextiles.html" class="card c">
+					<a href="PageTextiles.php" class="card c">
 						<img src="https://images.pexels.com/photos/934070/pexels-photo-934070.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
 						<div class="card-img-overlay c">
 							<h5 class="card-title c">Textiles</h5>
@@ -38,7 +38,7 @@
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-5 col-lg-4 c">
-					<a href="vaisselle.html" class="card c">
+					<a href="vaisselle.php" class="card c">
 						<img src="https://images.pexels.com/photos/291767/pexels-photo-291767.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
 						<div class="card-img-overlay c">
 							<h5 class="card-title c">Vaisselle</h5>
@@ -46,7 +46,7 @@
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-5 col-lg-4 c">
-					<a href="papeterie.html" class="card c">
+					<a href="papeterie.php" class="card c">
 						<img src="https://images.pexels.com/photos/632470/pexels-photo-632470.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
 						<div class="card-img-overlay c">
 							<h5 class="card-title c">Papeterie</h5>
@@ -100,7 +100,7 @@
 	<section id="top-selling">
 		<div class="container">
 			<div class="row justify-content-center">
-				<h2 class="col text-center titre_top_selling"><span class="s1">T</span>op <span class="s1">D</span>es <span class="s1">V</span>entes</h2>
+				<h2 class="col text-center"><span class="s1">T</span>op <span class="s1">D</span>es <span class="s1">V</span>entes</h2>
 			</div>
 			<div class="row justify-content-center">
 				<p class="col text-center top_selling_txt">Les meilleures ventes du Wild Bazar.</p>
