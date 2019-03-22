@@ -38,7 +38,9 @@ body {
     font-size: 25px;
     margin-left: justify;
 }
-
+.nav-link:hover {
+	color: #FF7A00!important;
+}
 .photo{
     width: 50px;
 }
