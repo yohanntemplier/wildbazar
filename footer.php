@@ -30,7 +30,7 @@
 					<div class="col-sm">
 						<div class = "wild">
 							<div class="col-8">
-							<p> <img src="https://imagizer.imageshack.com/img923/8125/xjvCju.png" class="logofooter" alt="logo"> <span class="titre"> W</span>ild<span class="titre">B</span>azar</p> </div>
+							<p> <img src="images/logo_white_176x60.png" class="logofooter" alt="logo"> <span class="titre"> W</span>ild<span class="titre">B</span>azar</p> </div>
 						</div>
 
 						<div class ="adress">
