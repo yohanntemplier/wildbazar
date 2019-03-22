@@ -1,6 +1,8 @@
+<?php
+
+?>
 <!DOCTYPE html>
 <html>
-
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -16,9 +18,7 @@
     <link href="https://fonts.googleapis.com/css?family=Audiowide" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
 </head>
-
 <body>
-
 <?php
 include 'header.php';
 ?>
@@ -257,43 +257,6 @@ include 'footer.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
         integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
         crossorigin="anonymous"></script>
-
-<div class="modal fade" id="modal-generique" tabindex="-1" role="dialog"
-     aria-labelledby="exampleModalCenterTitle" aria-hidden="true">
-    <div class="modal-dialog modal-dialog-centered" role="document">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h5 class="modal-title" id="exampleModalCenterTitle">title</h5>
-
-                <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                    <span aria-hidden="true">&times;</span>
-                </button>
-            </div>
-            <div class="modal-body">
-                <div class="row">
-                    <img src="" alt="..." class="js-img col-3">
-                    <span class="js-description col-9">Description de l'article</span>
-                </div>
-            </div>
-            <div class="modal-footer">
-                <button type="button" class="btn2" data-dismiss="modal">Close</button>
-            </div>
-        </div>
-    </div>
-</div>
-<script>
-    $('#modal-generique').on('show.bs.modal', function (event) {
-        var button = $(event.relatedTarget)
-        var title = button.data('title');
-        var img = button.data('img');
-        var prix = button.data('prix');
-        var desc = button.data('desc');
-        var modal = $(this)
-        modal.find('.modal-title').text(title)
-        modal.find('.js-img').attr('src', img)
-        modal.find('.js-description').html(desc);
-    })
-</script>
 </body>
 
 </html>
