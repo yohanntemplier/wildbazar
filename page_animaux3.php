@@ -38,7 +38,7 @@ $products = [
     <h2 class="title-banner col-12"><span class="s1">A</span>nimaleri<span class="s1">e</span></h2>
     <div class="row justify-content-center">
         <p class="title-desc-banner col-12">Parce que votre ami à quatre pattes a aussi le droit d'avoir du style. Votre style.</p>
-        <a href="addproduct_petshop.php"><button type="submit" class="btn btn1"> + ADD NEW</button></a>
+        <a href="addproduct_petshop.php"><button type="submit" class="btn btn1">Ajouter</button></a>
     </div>
     <img src="images/cover-animalerie.jpeg" class="img-cover" alt="Photo de couverture Wild Bazar Animalerie">
 </header>
