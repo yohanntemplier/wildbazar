@@ -60,7 +60,7 @@
 					</a>
 				</div>
 				<div class="col-sm-6 col-md-5 col-lg-4 c">
-					<a href="accessoire.html" class="card c">
+					<a href="accessoire.php" class="card c">
 						<img src="https://images.pexels.com/photos/1011334/pexels-photo-1011334.jpeg?auto=compress&cs=tinysrgb&h=750&w=1260" alt="">
 						<div class="card-img-overlay c">
 							<h5 class="card-title c">Accessoires</h5>
