@@ -23,6 +23,10 @@ if($_SERVER['REQUEST_METHOD'] === 'POST') {
     if (empty($data['picture'])) {
         $errors['picture'] = 'Une image est requise';
     }
+
+    if(empty($errors)){
+        header('Location: success_petform.php');
+    }
 }
 
 ?>
@@ -109,12 +113,12 @@ include 'header.php'
     <div class="form-group">
         <label class ="label-form" for="description">Description du produit : <span class="warning">*</span></label>
         <textarea class="form-control" id="description" name="description" rows="3"></textarea>
-        <p class="warning"><?= echo $errors['description'] ?></p>
+        <p class="warning"><?= $errors['description'] ?></p>
     </div>
     <div class="form-group">
         <label class ="label-form" for="picture">Image : <span class="warning">*</span></label>
         <input type="text" class="form-control" id="picture" value="<?php $data['picture'] ?>" name="picture">
-        <p class="warning"><?= echo $errors['picture'] ?></p>
+        <p class="warning"><?= $errors['picture'] ?></p>
     </div>
     <button type="submit" class="btn btn-primary btn-petshop col-2">Soumettre</button>
 </form>

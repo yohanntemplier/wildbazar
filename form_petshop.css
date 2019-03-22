@@ -154,6 +154,12 @@ span{
     margin-top: 10px;
 }
 
+.success{
+    color: #FF7A00;
+    margin-top: 100px;
+    margin-bottom: 50px;
+}
+
 /*FOOTER*/
 
 .footer {
