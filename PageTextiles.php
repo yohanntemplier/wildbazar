@@ -156,7 +156,7 @@ $product = [
             Ici vous trouverez des produits unique pour styliser votre chez vous et vous même !<br>
             libre de droit et 100% laine de yack bien entendu ! </p>
 
-        <a class="btn btn-lg d-flex align-items-center" href="formTextiles.php" role="button">+ Ajouter un produit</a>
+        <a class="btn btn-lg d-flex align-items-center" href="formTextiles.php" role="button">Ajouter</a>
 
     </div>
     <!-- Jumbotron -->

@@ -6,6 +6,8 @@ body {
     list-style-type: none;
 }
 
+
+
 .lead{
     text-align: center;
     color: #FFFFFF;
@@ -32,11 +34,14 @@ body {
     font-size: 25px;  
 }
 
+
+
 .nav-link2{
-    font-family: 'Roboto', sans-serif;
-    color: rgba(255, 255, 255, 0.377);
-    font-size: 25px;
-    margin-left: justify;
+	font-family: 'Roboto', sans-serif;
+	font-size: 25px;
+	margin-left: 5px;
+	color: white;
+	margin-top: 16px;
 }
 .nav-link:hover {
 	color: #FF7A00!important;

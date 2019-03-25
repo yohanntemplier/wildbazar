@@ -17,7 +17,7 @@
             <div class="container jumb">
                 <h1 class="display-8"><span class="s1">V</span>aisselle</h1>
                 <p class="lead">On mange, on en met plein sur les doigts et la table, mais pas avec de la vaisselle !</p>
-                <a class="btn align-item-center justify-content-center" href="formVaisselle.php" role="button">Ajouter un produit</a>
+                <a class="btn align-item-center justify-content-center" href="formVaisselle.php" role="button">Ajouter</a>
             </div>
         </div>
         <div class="container">

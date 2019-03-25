@@ -17,6 +17,10 @@
     color: #FF7A00;
 }
 
+body {
+    background-image: url("images/full-bloom.png");
+}
+
 .navbar {
     background-color: #2A5762;
     top: 0;
