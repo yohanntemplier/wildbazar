@@ -1,32 +1,50 @@
+section{
+    background-image: url(images/full-bloom.png);
+    padding-top: 50px;
+}
+
+body{
+    background-image: url(images/full-bloom.png);
+}
+
+footer{
+    padding-top: 50px;
+}
+
 .lead{
     text-align: center;
-    color: #FFFFFF;
-    font-size: 20px;
+    color: white;
+    font-size: 1em;
     font-family: 'Comfortaa', cursive;
 
 }
 
 .display-4{
     text-align: center;
-    font-size: 80px;
-    color:  rgb(56, 0, 39);
+    font-size: 6em;
+    color:  white;
     font-family: 'Comfortaa', cursive;
+    letter-spacing: -3px;
 }
 
 .s1{
     color: #FF7A00;
 }
 
-body {
-    background-image: url("images/full-bloom.png");
-}
+.navbar{
 
-.navbar {
     background-color: #2A5762;
     top: 0;
     position: relative;
     transition: top 0.5s;
-    height: 70px;
+}
+
+.navbar-nav{
+    color: white;
+}
+
+.nav-item{
+    color: white;
 }
 
 .navbar.expand {
@@ -35,140 +53,158 @@ body {
 
 .nav-link{
     font-family: 'Roboto', sans-serif;
-    font-size: 22px;
-    color: #FFFFFF!important;
-    margin-right: 20px;
-}
-
-.nav-link:hover {
-    color: #FF7A00!important;
-}
-
-.nav-item {
-    list-style-type: none;
+    font-size: 25px;
 }
 
 .nav-link2{
     font-family: 'Roboto', sans-serif;
-    color: #FFFFFF;
     font-size: 25px;
-    margin-left: justify;
-    padding-top: 17px;
+    margin-left: 5px;
+    color: white;
+    margin-top: 16px;
 }
 
 .photo{
     width: 50px;
-    padding-right: 8px;
+    margin-bottom: 14px;
 }
 
 .navbar-brand p{
     display: inline-block;
 }
+
 h2 {
     font-family: 'Comfortaa', cursive;
     font-size: 5em;
     text-align: center;
     margin-bottom:1em;
 }
-    
-.card img{
-    position: relative;
-    margin:auto;
-    margin-top: 20px;
+
+.img-cover{
+    width: 100%;
+    height:28rem;
+    object-fit: cover;
+    filter: brightness(0.4);
 }
-    
-.card-title {
-    font-family: 'Comfortaa', cursive;
-    text-decoration: none;
+.title-banner{
+    font-family: Comfortaa;
+    font-size: 4.5em;
     position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    font-size: 3em;
-    color: none;
-    transition: 0.5s ease;
+    color: white;
+    z-index: 1;
+    margin-top: 75px;
 }
-    
-.card {
-    margin: 0.7em;
-    transition: 0.5s ease;
+
+span{
+    color: #FF7A00;
+}
+
+.title-desc-banner{
+    position: absolute;
+    z-index: 1;
+    font-family: Comfortaa;
+    color: white;
+    margin-top: 210px;
+    width: auto;
     text-align: center;
 }
-    
-.affichage_prix h5{
-    opacity: 0;
+
+.btn1{
+    position: absolute;
+    z-index: 1;
+    border: solid 1px #FF7A00;
+    color: #FF7A00;
+    width: 120px;
+    margin-top: 300px;
+}
+
+.btn1:hover{
+    background-color: #FF7A00;
+    color: white;
+    border: none;
+}
+/*PAGE*/
+
+.card{
+    margin-top: 1em;
+    margin-bottom: 1em;
+    overflow: hidden;
+    transition: transform 0.2s;
 }
 
 .card:hover {
-    box-shadow: 0px 0px 4px rgba(0,0, 0,0.7);
+    transform: scale(1.1);
 }
-    
-.wild {
-    font-size: 50px;
-}
-    
-img {
-    max-width: 50%;
-    height: auto;
-}
-    
-.footer {
-    background-color: #009C9C;
-    padding-top: 15px;
-}
-    
-h3 {
-    font-family: 'Comfortaa', cursive;
-    color: rgba(5, 18, 196, 0.781);
-}
-    
-.row {
-    font-family: 'Roboto', sans-serif;
-    font-size : 20px;
-}
-.card-img-top{
-        margin-bottom:90px;
-        margin-top: 80px;
-}
-@media screen and (max-width: 475px){
-        .lead{
-            text-align: center;
-            color: rgb(56, 0, 39);
-            font-size: 20px;
-            font-family: 'Comfortaa', cursive;
-            
-        }
-            
-        .display-8{
-            text-align: center;
-            font-size: 40px;
-            color: white;
-            font-family: 'Comfortaa', cursive;
-            }  
 
+.settings_card{
+    max-width: 290px;
+    margin-top: 25px;
+    margin-bottom: 25px;
 }
-.col3{
-    color: rgba(5, 18, 196, 0.781);
-}
-.navbar-nav{
-    margin-left: 50px;
-}
-button.navbar-toggler{
-    color: aliceblue;
-}
-.btn2{
+
+.btn_ts{
+    color: #FF7A00;
     border: solid 1px #FF7A00;
-    opacity: 0.6;
-    color: #FF7A00 ;
+    font-family: Roboto;
 }
-.jumbotron{
-    background-image: url(https://images.pexels.com/photos/1011334/pexels-photo-1011334.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260);
+
+.btn_ts:hover {
+    background-color: #FF7A00;
+    color: white;
+}
+
+.card-ts{
+    border: solid 1px rgba(0, 0, 0, 0.125);
+    margin-top: 13px;
+    height: 250px;
+    object-fit: cover;
+}
+
+.card_title_ts{
+    height:75px;
     text-align: center;
 }
+
+.modal-content{
+    max-width: 50rem;
+}
+
+.mod-title-ts{
+    font-size: 2em;
+    font-family: Comfortaa;
+}
+
+.prix-ts{
+    font-weight: bold;
+    font-size: 2em;
+}
+
+.desc-ts{
+    margin-top: 20px;
+}
+
+.carac-modal{
+    margin-left: 25px;
+    font-size: 2em;
+}
+
+.price{
+    display: block;
+    position: absolute;
+    width: 120px;
+    text-align: center;
+    align-self: center;
+    border-radius: 15px;
+    margin-top: 14px;
+    font-weight: bold;
+    font-size: 1.4em;
+    font-family: Roboto;
+    opacity: 0.9;
+}
+
 .footer {
     background-color: #2A5762;
     padding-top: 10px;
-    padding-left: 30px;
     line-height: 40px;
 }
 
@@ -185,9 +221,9 @@ button.navbar-toggler{
     font-family: 'Roboto', sans-serif;
     font-size : 20px
 }
+
 .lienfoot {
     color:#FFFFFF;
-
 }
 
 .lienfoot:hover {
@@ -195,15 +231,49 @@ button.navbar-toggler{
     color: #FF7A00;
 }
 
+.logofooter {
+    width: 18%;
+}
+
 form  {
     color: #FFFFFF;
 }
 
-.text-center {
+.footer .text-center {
     color: #FFFFFF;
 }
 
-.logofooter {
-    width : 18%;
+
+/**button **/
+
+.btn {
+    border: solid 1px #FF7A00;
+    background-color: #FFFFFF;
+    color: #FF7A00;
+
+}
+
+.btn:hover {
+    background-color:  #FF7A00;
+    color: #FFFFFF;
+}
+
+/**texte**/
+
+.titre {
+    color: #FF7A00;
+}
+
+.jumbotron{
+    background-image: url("https://images.pexels.com/photos/1011334/pexels-photo-1011334.jpeg?auto=compress&amp;cs=tinysrgb&amp;h=750&amp;w=1260");
+    opacity: 0.12%;
+    text-align: center;
+    font-size: 35px;
+}
+.display-8{
+    text-align: center;
+    font-size: 70px;
+    color: white;
+    font-family: 'Comfortaa', cursive;
 }
 
