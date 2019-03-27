@@ -8,9 +8,6 @@
 
 ?>
 
-
-
-
 <!DOCTYPE html>
 <html lang="en">
 
@@ -44,7 +41,7 @@
                 Ici vous trouverez des produits unique pour styliser votre chez vous et vous même !<br>
                 libre de droit et 100% laine de yack bien entendu ! </p>
 
-            <a class="btn btn-lg d-flex align-items-center" href="formTextiles.php" role="button">+ ADD NEW</a>
+
 
         </div>
         <!-- Jumbotron -->
@@ -52,7 +49,7 @@
 
 <body>
 <div class="container formAjout">
-<h2>Votre ajout à été pris en compte ! </h2>
+<h2 style="color: white;" ;">Votre ajout à été pris en compte ! </h2>
 
 
 </div>
