@@ -1,3 +1,53 @@
+<?php
+require 'functionpapeterie.php';
+require 'connec.php';
+$pdo = new PDO(DSN, USER, PASS);
+$pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST'){
+
+    $data = trimArray($_POST);
+
+    $errors=[];
+
+    if(empty($data ['name'])){
+        $errors['name'] = 'Le nom du produit est vide';
+    }
+
+    $nameMaxLength = 100;
+    if(strlen($data ['name']) > $nameMaxLength){
+        $errors['name'] = 'Le nom du produit ne doit pas faire plus de' .$nameMaxLength. 'caractères';
+    }
+
+    if(empty($data ['description'])){
+        $errors['description'] = 'La description du produit est vide';
+    }
+
+    if(empty($data ['price'])){
+        $errors['price'] = 'Le prix du produit est vide';
+    }
+    $priceMaxLenght = 11;
+    if(strlen($data['price']) > $priceMaxLenght){
+        $errors['price'] = 'Le prix du produit ne doit pas faire plus de' .$priceMaxLenght. 'caractères';
+    }
+
+
+if (empty($errors)) {
+
+    $query = "INSERT INTO products (name, description, price, picture) VALUES (:name, :description, :price, :picture)";
+    $statement = $pdo->prepare($query);
+
+    $statement->bindValue(':name', $_POST['name'], PDO::PARAM_STR);
+    $statement->bindValue(':description', $_POST['description'], PDO::PARAM_STR);
+    $statement->bindValue(':price', $_POST['price'], PDO::PARAM_INT);
+    $statement->bindValue(':picture', $_POST['picture'], PDO::PARAM_STR);
+    $statement->execute();
+
+    header('Location: papeterie.php');
+    }
+}
+?>
+
 <!DOCTYPE html>
 <html lang="fr">
 
@@ -9,43 +59,14 @@
 
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
 
-    <link rel="stylesheet" href="papeterie.css">
+    <link rel="stylesheet" href="../papeterie.css">
 
     <link href="https://fonts.googleapis.com/css?family=Roboto" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Comfortaa" rel="stylesheet">
 
 </head>
 
-<?php
 
-// define variables and set to empty values
-$nameErr = $priceErr = $descriptionErr = "";
-$name = $price = $description = "";
-$errors= 0;
-if ($_SERVER["REQUEST_METHOD"] == "POST") {
-
-
-    if (empty($_POST["name"])) {
-        $nameErr = "le nom du produit est obligatoire";
-        $errors+= 1;
-    }
-
-    if (empty($_POST["price"])) {
-        $priceErr = "le pris est obligatoire";
-        $errors+= 1;
-    }
-
-    if (empty($_POST["description"])) {
-        $descriptionErr = "la description est obligatoire";
-        $errors+= 1;
-    }
-
-    header('Location: form.php');
-    exit();
-
-}
-
-?>
 
 
 <body>
@@ -63,54 +84,31 @@ if ($_SERVER["REQUEST_METHOD"] == "POST") {
 <div class = 'container formajout'>
     <h2>Formulaire d'ajout</h2>
     <p><span class="error">* champs obligatoires</span></p>
-    <form action=""  method="post">
-    <div class="form-row">
-        <div class="form-group col-md-6">
-            <label for="nom">Nom du produit</label>
-            <input type="text" class="form-control" id="nom" name="name" value="<?= $_POST['name'] ?? '';?>" placeholder="nom du produit" required>
-            <p><span class="error">* <?= $nameErr;?></span></p>
+    <form action="../formpapeterie.php" method="post">
+        <div class="form-group">
+            <label for="name">Nom du produit</label>
+            <input type="text" class="form-control" id="name" name="name" value="<?= $data['name'] ?? '';?>" placeholder="nom du produit">
+            <p><span class="error">*<?php if(!empty($errors['name'])) : ?><?= $errors['name']?><?php endif;?></span></p>
         </div>
-        <div class="form-group col-md-6">
-            <label for="tarif">Prix du produit</label>
-            <input type="text" class="form-control" id="tarif" name="price" value="<?= $_POST['price'] ?? '';?>"placeholder="Prix" required>
-            <p><span class="error">* <?= $priceErr;?></span></p>
-        </div>
-    </div>
 
-    <div class="form-group">
-        <label for="comment">Description du produit</label>
-        <textarea class="form-control" id="comment" name="description" value="<?= $_POST['description'] ?? '';?>" placeholder="description du produit" rows="3" required></textarea>
-        <p><span class="error">* <?= $descriptionErr;?></span></p>
-    </div>
+        <div class="form-group">
+            <label for="price">Prix du produit</label>
+            <input type="number" class="form-control" id="price" name="price" value="<?= $data['price'] ?? '';?>"placeholder="Prix">
+            <p><span class="error">*<?php if(!empty($errors['price'])) : ?><?= $errors['price']?><?php endif;?></span></p>
+        </div>
 
-    <div class="form-row">
-        <div class="form-group col-md-4">
-            <label for="inputState">Taille</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choisissez votre taille</option>
-                <option>petit</option>
-                <option>moyen</option>
-                <option>grand</option>
-            </select>
+        <div class="form-group">
+            <label for="picture">Image du produit</label>
+            <input type="url" class="form-control" id="picture" name="picture" value="<?= $data['picture'] ?? '';?>"placeholder="https://image.com">
         </div>
-        <div class="form-group col-md-4">
-            <label for="inputState">Couleur</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choisissez votre couleur</option>
-                <option>rouge</option>
-                <option>bleu</option>
-                <option>noir</option>
-            </select>
+
+        <div class="form-group">
+            <label for="description">Description du produit</label>
+            <textarea class="form-control" id="description" name="description" placeholder="description du produit"><?= $data['description'] ?? '';?></textarea>
+            <p><span class="error">*<?php if(!empty($errors['description'])) : ?><?= $errors['description']?><?php endif;?></span></p>
         </div>
-        <div class="form-group col-md-4">
-            <label for="inputState">Marque</label>
-            <select id="inputState" class="form-control">
-                <option selected>Choisissez votre marque</option>
-                <option>guitare</option>
-                <option>absurd corp</option>
-            </select>
-        </div>
-    </div>
+
+
 
     <button type="submit" class="btn btn-primary">Envoyer</button>
 </form>
@@ -131,7 +129,3 @@ include 'footer.php';
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
 </body>
 </html>
-
-
-
-
