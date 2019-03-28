@@ -34,7 +34,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST'){
 
 if (empty($errors)) {
 
-    $query = "INSERT INTO products (name, description, price, picture) VALUES (:name, :description, :price, :picture)";
+    $query = "INSERT INTO papeterie (name, description, price, picture) VALUES (:name, :description, :price, :picture)";
     $statement = $pdo->prepare($query);
 
     $statement->bindValue(':name', $_POST['name'], PDO::PARAM_STR);

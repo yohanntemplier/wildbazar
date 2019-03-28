@@ -3,7 +3,7 @@
 $pdo = new PDO(DSN, USER, PASS);
 $pdo->setAttribute(\PDO::ATTR_ERRMODE, \PDO::ERRMODE_EXCEPTION);
 
-$query = "SELECT * FROM products";
+$query = "SELECT * FROM papeterie";
 $statement = $pdo->query($query);
 $articles = $statement->fetchAll(PDO::FETCH_ASSOC);
 ?>
